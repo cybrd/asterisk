@@ -1,7 +1,7 @@
 import { Model, STRING, INTEGER } from 'sequelize';
 import { db } from '../my.sequelize';
 
-export class CallLog extends Model {
+export class CallLog extends Model<CallLog> {
   public channel!: string;
   public extension!: string;
 }
